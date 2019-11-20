@@ -8,7 +8,7 @@
     <title>prototype</title>
 </head>
 <body>
-    <!-- <div class="firstPage" data-vide-bg="videos/firstPage"> -->
+    <div class="firstPage" data-vide-bg="videos/firstPage"></div>
     <!-- </div> -->
     <div id="wrap">
         <header>
@@ -22,6 +22,15 @@
             </div>
             <img src="./images/notification (1).png" alt="" id="alarm">
             <div class="sub_manu">
+                <img src="./images/profile.png" alt="" id="profile">
+                <div class="all_pay">
+                    <div class="text">
+                        <p>총</p>&nbsp;&nbsp;<p id="money"></p>&nbsp;&nbsp;<p>원 / 월</p>
+                    </div>
+                </div>
+                <img src="./images/svs.png" alt="" id="svs">
+                <img src="./images/add.png" alt="" id="add">
+                <img src="./images/opction_btn.png" alt="" id="op_btn">
             </div>
             <div class="sub_wrap">
             </div>
@@ -36,14 +45,15 @@
                     <div class="swiper-slide" id="whtcha_page">
                         <img src="./images/왓챠.png" alt="" id="whtcha">
                     </div>
-                    <div class="swiper-slide" id="whtcha_page">
-                        
+                    <div class="swiper-slide" id="twitch_page">
+                        <img src="./images/twitch.png" alt="" id="twitch">
                     </div>
                 </div>
             </div>
             <div class="icon_text">
                 <img src="./images/netflix_text.png" alt="" id="netflix_text">
                 <img src="./images/왓챠_text.png" alt="" id="whtcha_text">
+                <img src="./images/twitch_text.png" alt="" id="twitch_text">
             </div>
         </div>
         <div id="content_netflix">
@@ -56,6 +66,11 @@
             <img src="./images/time_whtcha.png" alt="" id="time_whtcha">
             <img src="./images/graph_whtcha.png" alt="" id="graph_whtcha">
         </div>
+        <div id="content_twitch">
+            <img src="./images/pay_twitch.png" alt="" id="pay_twitch">
+            <img src="./images/time_twitch.png" alt="" id="time_twitch">
+            <img src="./images/graph_twitch.png" alt="" id="graph_twitch">
+        </div>
     </div>
 
     <div class="opction">
@@ -64,6 +79,7 @@
             </div>
             <img src="./images/settings.png" alt="" id="set">
             <P id="set_text_1">설정</P>
+            <img src="./images/x.png" alt="" id="x">
             <div class="box">
                 <p>결제일 전에 푸쉬 알림 활성화</p>
                 <div class="toggle">
@@ -119,6 +135,29 @@
             </div>
             <div class="dark_wrap"></div>
         </div>
+    </div>
+    <div id="add_page">
+        <img src="./images/svs_manu.png" alt="" id="svs_manu">
+        <img src="./images/input.png" alt="" id="input">
+        <form name="checkboxArea" id="checkboxArea" method="post" action="#">
+            <p>
+                <input type="checkbox" id="checkbox1" checked="checked" />
+                <label for="checkbox1"></label>
+                <img src="./images/add_netflix.png" alt="" id="add_netflix">
+            </p>
+            
+            <p>
+                <input type="checkbox" id="checkbox2" checked="checked"/>
+                <label for="checkbox2"></label>
+                <img src="./images/add_whtcha.png" alt="" id="add_whtcha">
+            </p>
+            
+            <p>
+                <input type="checkbox" id="checkbox3" />
+                <label for="checkbox3"></label>
+                <img src="./images/add_twitch.png" alt="" id="add_twitch">
+            </p>
+        </form>
     </div>
     <script src="./js/jquery-3.3.1.min.js"></script>
     <script src="./js/app.js"></script>
