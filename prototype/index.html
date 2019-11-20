@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"><link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"><link href="https://fonts.googleapis.com/css?family=Great+Vibes|Nanum+Gothic|Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <title>prototype</title>
+</head>
+<body>
+    <!-- <div class="firstPage" data-vide-bg="videos/firstPage"> -->
+    <!-- </div> -->
+    <div id="wrap">
+        <header>
+            <div class="hamburger">
+                <input type="checkbox" id="menuicon">
+                <label for="menuicon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <img src="./images/notification (1).png" alt="" id="alarm">
+            <div class="sub_manu">
+            </div>
+            <div class="sub_wrap">
+            </div>
+        </header>
+    
+        <div id="visual">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" id="netflix_page">
+                        <img src="./images/netflix.jpg" alt="" id="netflix">
+                    </div>
+                    <div class="swiper-slide" id="whtcha_page">
+                        <img src="./images/왓챠.png" alt="" id="whtcha">
+                    </div>
+                    <div class="swiper-slide" id="whtcha_page">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="icon_text">
+                <img src="./images/netflix_text.png" alt="" id="netflix_text">
+                <img src="./images/왓챠_text.png" alt="" id="whtcha_text">
+            </div>
+        </div>
+        <div id="content_netflix">
+            <img src="./images/pay_netflix.png" alt="" id="pay_netflix">
+            <img src="./images/time_netflix.png" alt="" id="time_netflix">
+            <img src="./images/graph_netflix.png" alt="" id="graph_netflix">
+        </div>
+        <div id="content_whtcha">
+            <img src="./images/pay_whtcha.png" alt="" id="pay_whtcha">
+            <img src="./images/time_whtcha.png" alt="" id="time_whtcha">
+            <img src="./images/graph_whtcha.png" alt="" id="graph_whtcha">
+        </div>
+    </div>
+
+    <div class="opction">
+        <div class="op">
+            <div class="opction_dark_1">
+            </div>
+            <img src="./images/settings.png" alt="" id="set">
+            <P id="set_text_1">설정</P>
+            <div class="box">
+                <p>결제일 전에 푸쉬 알림 활성화</p>
+                <div class="toggle">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round sw_1"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="box">
+                <p>분석 알림 활성화</p>
+                <div class="toggle">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round sw_2"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="opction_dark_2">
+            </div>
+            <P id="set_text_2">화면에 표시할 데이터</P>
+            <div class="box">
+                <p>금액한도</p>
+                <p id="right">--.--원</p>
+            </div>
+            <div class="box">
+                <p>사용 빈도 분석</p>
+                <img src="./images/right-arrow.png" alt="" id="arrow">
+            </div>
+            <div class="box">
+                <p>서비스 분야</p>
+                <img src="./images/right-arrow.png" alt="" id="arrow">
+            </div>
+            <div class="box">
+                <p>서비스 분석</p>
+                <img src="./images/right-arrow.png" alt="" id="arrow">
+            </div>
+            <div class="opction_dark_3">
+            </div>
+            <img src="./images/ooo.png" alt="" id="ooo">
+            <P id="set_text_3">요금제 & 기타</P>
+            <div class="box">
+                <p>요금 단위</p>
+                <p id="right">원(KRW)</p>
+            </div>
+            <div class="box">
+                <p>패턴 분석</p>
+                <img src="./images/right-arrow.png" alt="" id="arrow">
+            </div>
+            <div class="box">
+                <p>세부 설정</p>
+                <img src="./images/right-arrow.png" alt="" id="arrow_point">
+            </div>
+            <div class="dark_wrap"></div>
+        </div>
+    </div>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./swiper-5.2.0/swiper-5.2.0/package/js/swiper.min.js"></script>
+    <script src="./js/Vide-master/Vide-master/dist/jquery.vide.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 2.5,
+            centeredSlides: true,
+            spaceBetween: 30,
+            grabCursor: true,
+        });
+        
+    </script>
+</body>
+</html>
